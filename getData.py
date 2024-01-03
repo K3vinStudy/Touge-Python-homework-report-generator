@@ -15,7 +15,7 @@ def getData(choice):
     responseText = getResp.get_json_withCookie('https://data.educoder.net/api/users/'+zzud+'/courses.json?category=&status=&page=1&per_page=200&sort_by=updated_at&sort_direction=desc&username='+zzud+'&zzud='+zzud)
     courses = responseText['courses']
     for i in range(len(courses)):
-        if courses[i]['name'] == 'Python程序设计-22网工':
+        if courses[i]['name'] == 'Python程序设计-22网工':                           # 课程名称
             first_category_url = courses[i]['first_category_url']
             courseId = os.path.split(os.path.split(first_category_url)[0])[1]
             break
