@@ -1,7 +1,7 @@
 # Touge-Python-homework-report-generator
 头歌平台Python程序设计作业报告爬虫
 
-使用说明:
+使用说明:<br>
 wkhtmltopdf用于生成实验报告，需要自己手动从官网下载正确的安装包，安装到源代码内的wkhtmltopdf目录方可使用。
 下载地址：https://wkhtmltopdf.org/downloads.html
 
