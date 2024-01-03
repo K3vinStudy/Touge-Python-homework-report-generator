@@ -33,6 +33,9 @@ if __name__=="__main__":
     # 获取所有json内容
     score_jsons = getData.getData(choice)
     
+    # 删除cookie
+    get_cookie.remove_cookie()
+    
     # 生成报告PDF和源代码文件
     getCode.getCode(score_jsons)
     filesCode.output_pdf(score_jsons, name, clas, id)

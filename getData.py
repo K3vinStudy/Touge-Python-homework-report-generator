@@ -60,8 +60,6 @@ def getData(choice):
         #     file.write(json.dumps(score_jsons))
         results.append(score_jsons)
     
-    os.remove('cookie.txt')
-    print("\ncookie已删除")
     return results
     
         

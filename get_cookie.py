@@ -6,6 +6,7 @@
 import urllib.error, urllib.request, urllib.parse
 import http.cookiejar
 import getpass
+import os
 
 def get_cookie():#login：登录手机号，password：登录密码（首次获取cookie用此函数）
     pwCorrect = False
@@ -42,23 +43,6 @@ def get_cookie():#login：登录手机号，password：登录密码（首次获�
             return
         else:print("帐号或密码错误或网络出现问题，请重新输入")
 
-def login_in_cookie():#上面代码中我们保存cookie到本地了，以下代码我们能够直接从文件导入cookie进行登录
-    get_url="https://data.educoder.net/api/accounts/login.json"
-    cookie_filename = 'cookie.txt'#从文件获取cookie
-    cookie_aff = http.cookiejar.MozillaCookieJar(cookie_filename)
-    cookie_aff.load(cookie_filename, ignore_discard=True, ignore_expires=True)
-    handler = urllib.request.HTTPCookieProcessor(cookie_aff)
-    opener = urllib.request.build_opener(handler)
-    # 使用cookie登陆get_url
-    get_request = urllib.request.Request(get_url)
-    try:#检查获取cookie是否正确
-        get_response = opener.open(get_request)
-        print(get_response.read().decode())
-    except urllib.error.HTTPError :
-        print("login  failed")
-
-
-#以下为测试代码
-if __name__=="__main__":
-    get_cookie()
-    login_in_cookie()
+def remove_cookie():#删除cookie
+    os.remove('cookie.txt')
+    print("\ncookie已删除")
