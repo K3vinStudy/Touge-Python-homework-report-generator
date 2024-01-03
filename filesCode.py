@@ -1,6 +1,5 @@
 #作者：玉降
 #功能：导出总结性pdf报告
-#版本：1.0
 import markdown as mk
 import pdfkit as pdf
 import os

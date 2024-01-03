@@ -1,6 +1,5 @@
 # name: 使用Cookie获取网页内容
 # 作者：K3vin
-# version：1.1.0
 import http.cookiejar
 import requests
 

@@ -1,6 +1,5 @@
 # name: 获取作业URL（educoder）
 # 作者：K3vin
-# version：1.1.0
 import json
 import time
 import os

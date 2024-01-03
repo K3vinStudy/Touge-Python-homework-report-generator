@@ -1,6 +1,5 @@
 # name: 获取作业源代码（educoder）
 # 作者：K3vin
-# version：1.1.0
 import os
 
 def getCode(score_jsons):
