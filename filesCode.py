@@ -87,7 +87,4 @@ def output_pdf(score_jsons,name_,class_,id_):
         output = output + body
         pdf.from_string(output, output_path=filepath+category_name+"实验报告.pdf", configuration=configuration, options={'encoding': 'utf-8'},css=css)
         entire = entire + "<div style=\"page-break-before: always;\">{}</div>".format(output)
-    with open('./style/end.html', 'w', encoding='utf-8') as file:
-        file.write(entire)
-    file.close()
     pdf.from_string(entire, output_path="./OUT/实验报告(everything).pdf", configuration=configuration, options={'encoding': 'utf-8'},css=css)    
