@@ -1,7 +1,13 @@
+# test
+OUT/
+style/end.html
+
+# temp files
+__pycache__/
+.vscode/
+
+# wkhtmltopdf
 wkhtmltopdf/bin
 wkhtmltopdf/include
 wkhtmltopdf/lib
 wkhtmltopdf/uninstall.exe
-__pycache__/
-OUT/
-style/end.html
