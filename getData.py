@@ -29,7 +29,7 @@ def getData(choice):
         category_ids.append(second_category[i*2+choice]['category_id'])             # 截取实验或作业ID
     
     # 获取所有json内容
-    results = [] 
+    results = []
     
     for a in range(0, len(category_ids)):
         print("正在获取第("+str(a+1)+"/"+str(len(category_ids))+")个实验作业的信息...")
