@@ -4,7 +4,8 @@ style/end.html
 
 # temp files
 __pycache__/
-.vscode/settings.json
+.vscode/
+cookie.txt
 
 # wkhtmltopdf
 wkhtmltopdf/bin
